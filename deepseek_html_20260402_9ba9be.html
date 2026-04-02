@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAM Vision Impact - Community Service Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #97bc62 100%);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: #ffd966;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c5f2d;
+        }
+        
+        .logo-text h1 {
+            color: white;
+            font-size: 28px;
+        }
+        
+        .logo-text p {
+            color: #ffd966;
+            font-size: 14px;
+        }
+        
+        .candidate-number {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: #1e3a1e;
+            padding: 12px 40px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 500;
+        }
+        
+        .nav a:hover {
+            color: #ffd966;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x400/2c5f2d/white?text=JAM+Vision+Impact');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 20px;
+            max-width: 800px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section h3 {
+            color: #2c5f2d;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ffd966;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h4 {
+            color: #2c5f2d;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #2c5f2d;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1e3a1e;
+        }
+        
+        .btn-secondary {
+            background: #ffd966;
+            color: #2c5f2d;
+        }
+        
+        .btn-secondary:hover {
+            background: #e6c200;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: #e8f5e9;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .benefits ul {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        
+        .benefits li {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1e3a1e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .hero-content h2 {
+                font-size: 32px;
+            }
+            
+            .nav a {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+    <div class="logo-icon">
+        <img src="logo.png" alt="JAM Vision Impact Logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+    </div>
+    <div class="logo-text">
+        <h1>JAM Vision Impact</h1>
+        <p>Building Unity Through Service</p>
+    </div>
+</div>
+        <div class="candidate-number">Candidate: 1000672899</div>
+    </div>
+    
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#purpose">Our Purpose</a>
+        <a href="#opportunities">Volunteer Opportunities</a>
+        <a href="#impact">Community Impact</a>
+        <a href="#benefits">Benefits for Unity Springs</a>
+        <a href="#register">Register Now</a>
+    </div>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Together We Serve, Together We Grow</h2>
+            <p>Join JAM Vision Impact in making a lasting difference in Unity Springs and beyond.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="purpose" class="section">
+            <h3>Our Purpose</h3>
+            <p style="margin-top: 15px;">JAM Vision Impact is a community-driven initiative dedicated to fostering positive change through volunteerism. Our mission is to connect passionate individuals with meaningful service opportunities that address critical community needs. By uniting volunteers from all walks of life, we aim to build stronger, more resilient communities where everyone has the opportunity to thrive.</p>
+        </div>
+        
+        <div id="opportunities" class="section">
+            <h3>Volunteer Opportunities</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>📚 Tutoring Program</h4>
+                    <p>Help students succeed academically by providing one-on-one tutoring in math, reading, and science subjects.</p>
+                    <p><strong>Time Commitment:</strong> 2-4 hours/week</p>
+                    <p><strong>Skills:</strong> Teaching, Patience, Communication</p>
+                </div>
+                <div class="card">
+                    <h4>🏥 Health Outreach</h4>
+                    <p>Support mobile health clinics and wellness education programs in underserved communities.</p>
+                    <p><strong>Time Commitment:</strong> 3-5 hours/week</p>
+                    <p><strong>Skills:</strong> Healthcare, Organization, Empathy</p>
+                </div>
+                <div class="card">
+                    <h4>🌿 Environmental Cleanup</h4>
+                    <p>Participate in beach cleanups, tree planting, and environmental awareness campaigns.</p>
+                    <p><strong>Time Commitment:</strong> Flexible</p>
+                    <p><strong>Skills:</strong> Physical stamina, Teamwork, Environmental awareness</p>
+                </div>
+                <div class="card">
+                    <h4>🍲 Food Distribution</h4>
+                    <p>Help sort, pack, and distribute food to families in need throughout Unity Springs.</p>
+                    <p><strong>Time Commitment:</strong> 3-6 hours/week</p>
+                    <p><strong>Skills:</strong> Organization, Compassion, Reliability</p>
+                </div>
+                <div class="card">
+                    <h4>👴 Senior Support</h4>
+                    <p>Provide companionship and assistance to elderly residents in our community.</p>
+                    <p><strong>Time Commitment:</strong> 2-3 hours/week</p>
+                    <p><strong>Skills:</strong> Patience, Empathy, Good communication</p>
+                </div>
+                <div class="card">
+                    <h4>🌱 Community Garden</h4>
+                    <p>Help maintain community gardens that provide fresh produce to local families.</p>
+                    <p><strong>Time Commitment:</strong> 2-4 hours/week</p>
+                    <p><strong>Skills:</strong> Gardening, Physical ability, Teamwork</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="impact" class="section">
+            <h3>Our Community Impact</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>📊 By the Numbers</h4>
+                    <p><strong>500+</strong> Volunteers engaged</p>
+                    <p><strong>7</strong> Active Projects</p>
+                    <p><strong>3,500+</strong> Hours Contributed</p>
+                    <p><strong>$8,600+</strong> Charity Funds Raised</p>
+                </div>
+                <div class="card">
+                    <h4>🏆 Success Stories</h4>
+                    <p>Our Tutoring Program has helped over 100 students improve their grades by an average of 15%. The Community Garden has donated over 2,000 pounds of fresh produce to local food banks.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="benefits" class="section">
+            <h3>How Community Service Benefits Unity Springs</h3>
+            <div class="benefits">
+                <ul>
+                    <li><strong>🌆 Stronger Neighborhoods:</strong> Volunteers build connections and foster a sense of belonging among residents.</li>
+                    <li><strong>📈 Economic Growth:</strong> Community projects increase property values and attract new businesses to Unity Springs.</li>
+                    <li><strong>🎓 Youth Development:</strong> Mentorship programs keep youth engaged and reduce dropout rates.</li>
+                    <li><strong>🏥 Healthier Population:</strong> Health outreach and food distribution improve overall community wellness.</li>
+                    <li><strong>🌍 Environmental Protection:</strong> Cleanup initiatives preserve Unity Springs' natural beauty for future generations.</li>
+                    <li><strong>🤝 Reduced Crime:</strong> Engaged communities see lower crime rates and stronger social bonds.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="register" class="section" style="text-align: center;">
+            <h3>Ready to Make a Difference?</h3>
+            <p style="margin: 20px 0;">Join hundreds of volunteers who are already making an impact in Unity Springs.</p>
+            <a href="Volunteer Registration Form KSS.docx" class="btn">📝 Register as a Volunteer</a>
+            <a href="#benefits" class="btn btn-secondary" style="margin-left: 15px;">📖 Learn About Our Impact</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>JAM Vision Impact | Building Unity Through Service</p>
+        <p>123 Community Way, Unity Springs | Phone: (876) 555-0123 | Email: info@jamvision.org</p>
+        <p style="margin-top: 15px;">&copy; 2026 JAM Vision Impact. All rights reserved.</p>
+    </div>
+</body>
+</html>
